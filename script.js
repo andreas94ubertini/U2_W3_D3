@@ -15,7 +15,7 @@ const getBooks = function () {
                 let newCol = document.createElement('div')
                 newCol.classList.add('col')
                 newCol.innerHTML = `
-                <div class="card">
+                <div class="card shadow-lg p-1">
         <img src="${book.img}" class="card-img-top img-fluid" alt="book cover">
         <div class="card-body">
           <h5 class="card-title">${book.title}</h5>
@@ -63,11 +63,11 @@ const populateShoppingCart = function () {
     document.getElementById('row-cart').innerHTML = ''
     if (shoppingCart.length > 0) {
         document.getElementById('cart-div').classList.remove('d-none')
-        shoppingCart.forEach((el, i) => {
+        shoppingCart.forEach(el => {
             let newCol = document.createElement('div')
             newCol.classList.add('col-3')
             newCol.innerHTML = `
-                <div class="card">
+                <div class="card shadow-lg p-1">
         <img src="${el.img}" class="card-img-top img-fluid" alt="book cover">
         <div class="card-body">
           <h5 class="card-title">${el.title}</h5>
