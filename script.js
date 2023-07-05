@@ -26,7 +26,7 @@ const getBooks = function () {
              <span class="h6"> Description:</span> Placeholder text description
           </p>
           <p class="card-text">${book.price}€</p>
-          <div class="d-flex flex-wrap">
+          <div class="d-flex flex-wrap justify-content-center gap-2">
             <button class="btn btn-success buy">Compra ora</button>
             <button class="btn btn-danger hide">Scarta</button>
           </div>
